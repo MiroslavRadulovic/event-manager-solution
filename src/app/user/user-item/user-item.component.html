@@ -1,0 +1,14 @@
+<mat-card class="user">
+  <img
+    [src]="null"
+    class="u-card-bgOverlay user-image image-loading"
+    placeholder="assets/images/placeholder.png"
+  />
+  <div class="user-content overflow-hidden">
+    <h2 class="user-title overflow-hidden">{{ user.fullname }}</h2>
+    <div class="user-email">
+      <mat-icon>email</mat-icon>{{ user.email }}
+    </div>
+    <div class="user-date">Username: {{ user.username }}</div>
+  </div>
+</mat-card>
